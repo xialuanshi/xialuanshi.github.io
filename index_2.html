@@ -172,6 +172,20 @@
 			}
 		}
 	</style>
+	<script language="javascript" type="text/javascript">
+		function jump() {
+			var name = document.getElementById("name").value;
+			var passwd = document.getElementById("passwd").value;
+			if(name=="lxx" && passwd=="924"){
+				alert(name);
+				alert(passwd);
+				self.location ='https://www.runoob.com';
+			}
+			else{
+				alert("姓名或密码输入错误");
+			}
+	}
+	</script>
 </head>
 
 <body>
@@ -179,14 +193,14 @@
 		<h2>login</h2>
 		<form action="">
 			<div class="item">
-				<input type="text" required>
+				<input type="text" required id="name">
 				<label for="">姓名</label>
 			</div>
 			<div class="item">
-				<input type="password" required>
+				<input type="password" required id="passwd">
 				<label for="">密码</label>
 			</div>
-			<button class="btn">登录
+			<button class="btn" onclick="jump()">登录
 				<span></span>
 				<span></span>
 				<span></span>
