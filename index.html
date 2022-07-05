@@ -177,7 +177,8 @@
 			var name = document.getElementById("name").value;
 			var passwd = document.getElementById("passwd").value;
 			if(name==="lxx" && passwd==="924"){
-				window.location.href='https://www.runoob.com';
+				window.location.href = "index_1.html";
+				return  false;
 			}
 			else{
 				alert("姓名或密码输入错误");
@@ -198,7 +199,7 @@
 				<input type="password" required id="passwd">
 				<label for="">密码</label>
 			</div>
-			<button class="btn" onclick="jump()">登录
+			<button class="btn" onclick="return jump()">登录
 				<span></span>
 				<span></span>
 				<span></span>
