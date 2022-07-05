@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>dedicated to lxx</title>
+		<style type="text/css">
+			/* CSS Document */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.clearfix:after {
+				content: "";
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+
+			.clearfix {
+				*zoom: 1;
+			}
+
+			body {
+				background: url("images/ch.png") no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			.content {
+				width: 900px;
+				height: 500px;
+				margin: 200px auto 0 auto;
+				border-radius: 10px;
+				background-color: rgba(236, 236, 236, 0.59);
+				transition: all 1.0s;
+				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
+			}
+
+			.content img {
+				float: left;
+				width: 200px;
+				height: 200px;
+				margin: 150px 0 0 80px;
+				border-radius: 100px;
+
+			}
+
+			.content:hover {
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+			}
+
+			.content_r {
+				float: right;
+				width: 500px;
+				margin: 80px 60px 0 0;
+				/*	background-color: pink;*/
+			}
+
+			.content_l {
+				float: left;
+				width: 100%;
+				text-align: center;
+			}
+
+			.content_l h5 {
+
+				font-size: 17px;
+			}
+
+			.cc {
+				margin-top: 10px;
+				color: #1F2023;
+				font-size: 18px;
+			}
+
+			.color_1 {
+				color: #4855EC;
+				font-size: 18px;
+			}
+
+			.deeppink {
+				color: deeppink;
+			}
+
+			.link {
+				margin-top: 30px;
+			}
+
+			.link a {
+				display: block;
+				float: left;
+				width: 120px;
+				height: 45px;
+				margin: 5px 5px 0 0;
+				/*	padding: 0 15px;*/
+				color: #fff;
+				line-height: 45px;
+				transition: all 0.8s;
+				/*	background-color: deeppink;*/
+
+			}
+
+			.link a:hover {
+				background-color: rgba(0, 201, 243, 0.35);
+			}
+
+			.deeppink_1 {
+				background-color: deeppink;
+			}
+
+			.dodgerblue {
+				background-color: dodgerblue;
+			}
+
+			.magenta {
+				background-color: magenta;
+			}
+
+			.orange {
+				background-color: orange;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+					 setInterval("toggleSound()", 100);
+				}
+
+			function toggleSound() {
+				var music = document.getElementById("vd");//获取ID
+				if (music.paused) { //判读是否播放
+					music.paused=false;
+					music.play(); //没有就播放
+						}
+				}
+		</script>
+	</head>
+
+	<body>
+		<div class="content">
+			<img src="images/tx.png" alt="">
+			<div class="content_r clearfix">
+				<div class="content_l clearfix">
+					<h2>一个专属李欣欣的网页</h2>
+					<p class="cc" style="color:#ff2896"><b>用这个网页来记录李欣欣美好的瞬间，以及李欣欣的进步</b></p>
+					<p class="cc" style="color:#2b2b2b"><b>只要不停下努力的脚步，李欣欣终将成为她想成为的人</b></p>
+					<p class="cc" style="color:#ff1b1b"><b>加油！加油！加油！</b></p>
+					<br>
+					<p class="color_1">Today is better than yesterday is hope</p>
+					<p class="color_1"><b>今天比昨天好就是希望</b></p>
+					<br>
+					<p class="deeppink">赌上余生，遇见真正的自己</p>
+					<p class="deeppink"><b>Raise the rest of your life to meet you</b></p>
+					<div class="link">
+						<a href="#" class="dodgerblue" target="_blank">棒</a>
+						<a href="./index_1.html" class="deeppink_1" >初</a>
+						<a href="#" class="magenta" target="_blank">待续</a>
+						<a href="#" class="orange" target="_blank">待续</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <audio controls="controls" autoplay= "autoplay" loop="loop" id="vd">
+			<source src="images/kelin.mp3" type="audio/mp3" />
+		</audio>
+	</body>
+
+</html>
+
